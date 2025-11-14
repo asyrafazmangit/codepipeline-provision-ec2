@@ -26,8 +26,8 @@ Parameters:
 
 Mappings:
   RegionMap:
-    us-east-1:
-      AMI: ami-0c02fb55956c7d316
+    ap-southeast-1:
+      AMI: ami-0c56f26c1d3277bcb
     us-west-2:
       AMI: ami-008fe2fc65df48dac
     eu-west-1:

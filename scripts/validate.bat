@@ -14,7 +14,7 @@ echo.
 REM Validate pipeline template
 echo [1/2] Validating CodePipeline template...
 aws cloudformation validate-template ^
-  --template-body file://templates/codepipeline-template.yaml ^
+  --template-body C:\Users\RTV-Asyraf_Azman\Documents\GITHUB\codepipeline-provision-ec2\templates\codepipeline-template.yaml^
   --profile %AWS_PROFILE% ^
   --region %AWS_REGION%
 
@@ -30,7 +30,7 @@ echo.
 REM Validate EC2 template
 echo [2/2] Validating EC2 template...
 aws cloudformation validate-template ^
-  --template-body file://ec2-template.yaml ^
+  --template-body C:\Users\RTV-Asyraf_Azman\Documents\GITHUB\codepipeline-provision-ec2\ec2-template.yaml^
   --profile %AWS_PROFILE% ^
   --region %AWS_REGION%
 

@@ -9,6 +9,16 @@ REM Set AWS Profile and Region
 set AWS_PROFILE=asyraf
 set AWS_REGION=ap-southeast-1
 
+REM Set OUTPUT DIRECTORY for parameters
+set PARAM_DIR=C:\Users\RTV-Asyraf_Azman\Documents\GITHUB\codepipeline-provision-ec2\parameters
+set PARAM_FILE=%PARAM_DIR%\pipeline-params.json
+
+echo Creating parameter folder if not exists...
+if not exist "%PARAM_DIR%" (
+    echo Folder does not exist. Creating...
+    mkdir "%PARAM_DIR%"
+)
+
 echo Setting AWS Profile: %AWS_PROFILE%
 echo Setting AWS Region: %AWS_REGION%
 
@@ -85,7 +95,9 @@ set /p GITHUB_REPO="Enter your GitHub repository name: "
 set /p GITHUB_TOKEN="Enter your GitHub personal access token: "
 
 REM Create parameters file
-echo Creating parameters file...
+echo Creating parameters file in:
+echo %PARAM_FILE%
+
 (
 echo [
 echo   {
@@ -113,11 +125,12 @@ echo     "ParameterKey": "KeyPairName",
 echo     "ParameterValue": "%KEY_PAIR%"
 echo   }
 echo ]
-) > parameters\pipeline-params.json
+) > "%PARAM_FILE%"
 
 echo.
 echo Setup completed successfully!
-echo Parameters saved to: parameters\pipeline-params.json
+echo Parameters saved to:
+echo %PARAM_FILE%
 echo.
 echo Next steps:
 echo 1. Run: scripts\validate.bat
