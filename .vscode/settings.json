@@ -1,0 +1,18 @@
+{
+    "aws.region": "ap-southeast-1",
+    "aws.profile": "asyraf",
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/awslabs/goformation/master/schema/cloudformation.schema.json": [
+            "templates/*.yaml",
+            "templates/*.yml"
+        ]
+    },
+    "files.associations": {
+        "*.yaml": "yaml",
+        "*.yml": "yaml",
+        "*.bat": "bat"
+    },
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt"
+}
