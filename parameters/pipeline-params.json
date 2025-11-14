@@ -1,0 +1,26 @@
+[
+  {
+    "ParameterKey": "GitHubOwner",
+    "ParameterValue": "your-github-username"
+  },
+  {
+    "ParameterKey": "GitHubRepo",
+    "ParameterValue": "your-repo-name"
+  },
+  {
+    "ParameterKey": "GitHubToken",
+    "ParameterValue": "your-github-token"
+  },
+  {
+    "ParameterKey": "VPCId",
+    "ParameterValue": "vpc-xxxxxxxxx"
+  },
+  {
+    "ParameterKey": "SubnetId",
+    "ParameterValue": "subnet-xxxxxxxxx"
+  },
+  {
+    "ParameterKey": "KeyPairName",
+    "ParameterValue": "your-key-pair-name"
+  }
+]
