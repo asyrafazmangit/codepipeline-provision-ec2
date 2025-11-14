@@ -6,8 +6,10 @@ my-ec2-pipeline/
 │   ├── codepipeline-template.yaml
 │   └── ec2-template.yaml
 ├── scripts/
-│   ├── deploy.sh
-│   └── validate.sh
+│   ├── deploy.bat
+│   ├── validate.bat
+│   ├── setup.bat
+│   └── cleanup.bat
 ├── parameters/
 │   └── pipeline-params.json
 ├── .gitignore
