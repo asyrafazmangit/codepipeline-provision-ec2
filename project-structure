@@ -1,0 +1,14 @@
+my-ec2-pipeline/
+├── .vscode/
+│   ├── settings.json
+│   └── tasks.json
+├── templates/
+│   ├── codepipeline-template.yaml
+│   └── ec2-template.yaml
+├── scripts/
+│   ├── deploy.sh
+│   └── validate.sh
+├── parameters/
+│   └── pipeline-params.json
+├── .gitignore
+└── README.md
